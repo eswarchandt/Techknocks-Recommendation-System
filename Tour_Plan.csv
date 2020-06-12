@@ -1,0 +1,8 @@
+Source ,Destination,Distance,Sports,Ticket_fare/ Fuel Price,Accomodation,Service,Days ,Budget,Above_budget,car ,Bike,Train,Bus
+Ernakulam,Goa,767,1,6000,1,1,6,"15,000",No,1,0,0,0
+Selum,Goa,792,0,9000,0,1,10,"30,000",Yes,0,1,0,0
+Hyderabad,Goa,646,1,1500,1,0,7,"12,000",No,0,0,0,1
+Guntur,Goa,911,1,2000,0,1,4,"10,000",Yes,0,0,0,0
+Bangalore ,Goa ,584,0,1200,1,1,6,"10,000",No,0,0,1,0
+Mumbai,Goa,585,0,6000,1,1,5,"18,000",Yes,1,0,0,0
+Thiruvananthapuram,Goa,975,0,1600,1,1,8,"20,000",No,0,0,0,1
