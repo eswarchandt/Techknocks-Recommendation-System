@@ -7,7 +7,7 @@ Created on Sat Jun 13 19:33:21 2020
 
 from tkinter import *
 from tkinter import ttk
-
+import tkinter as tk
 import itertools
 
 
@@ -490,23 +490,30 @@ labelText.set(' ')
 
 
 
+label = tk.Label(
+    text="Hello, Tkinter",
+    fg="white",
+    bg="black",
+    width=10,
+    height=10
+)
+root.configure(bg='green')
+Label(root, text="Planning and Organizing travel and accomodation facility for you",bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
+Label(root, text="please be patient",bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
+Label(root, text="Tourists Reccomendations Portal",bg='green',fg='white').pack()
+Entry(root).pack()
+Label(root, text="      ",bg='green').pack()
+Button(root, text="Travel", command=foodclick,bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
+Button(root, text="Accomodation", command=beachclick,bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
+Button(root, text="No of days stay", command=monumclick,bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
 
-Label(root, text="Welcome to GOA Tourism").pack()
-Label(root, text="      ").pack()
-Label(root, text="Goa  A Perfect Holiday Destination").pack()
-Label(root, text="      ").pack()
-Label(root, text="Tourists Reccomendations Portal").pack()
-Label(root, text="      ").pack()
 
-Button(root, text="Restaurants", command=foodclick).pack()
-Label(root, text="      ").pack()
-Button(root, text="Beaches", command=beachclick).pack()
-Label(root, text="      ").pack()
-Button(root, text="Monuments", command=monumclick).pack()
-Label(root, text="      ").pack()
-
-
-label1 = Label(root, textvariable = labelText)
+label1 = Label(root, textvariable = labelText,bg='green')
 label1.pack()
 
 
