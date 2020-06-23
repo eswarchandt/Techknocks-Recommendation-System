@@ -12,7 +12,7 @@ import itertools
 
 
 def foodclick():
-    labelText.set('Restaurants you may like : ')
+    labelText.set('Travels you may like : ')
    
     
     support = int(40)
@@ -167,7 +167,7 @@ def foodclick():
     
         
 def beachclick():
-    labelText.set(' Beaches to explore :')
+    labelText.set(' Accomodations on your choice:')
     
     
     
@@ -325,7 +325,7 @@ def beachclick():
    
 
 def monumclick():
-    labelText.set(' Monuments & Historic sites you must visit :')
+    labelText.set(' No of Days you want to Stay :')
 
     
     
@@ -497,20 +497,30 @@ label = tk.Label(
     width=10,
     height=10
 )
+#root.geometry('400x400')
 root.configure(bg='green')
 Label(root, text="Planning and Organizing travel and accomodation facility for you",bg='green',fg='white').pack()
 Label(root, text="      ",bg='green').pack()
 Label(root, text="please be patient",bg='green',fg='white').pack()
 Label(root, text="      ",bg='green').pack()
 Label(root, text="Tourists Reccomendations Portal",bg='green',fg='white').pack()
+Label(root, text="      ",bg='green').pack()
+Label(root, text= 'Destination')
+Entry(root).pack()
+Label(root, text="      ",bg='green').pack()
+Label(root, text= 'Client Budget',bg='green', fg='white')
 Entry(root).pack()
 Label(root, text="      ",bg='green').pack()
 Button(root, text="Travel", command=foodclick,bg='green',fg='white').pack()
+#Entry(root).pack()
 Label(root, text="      ",bg='green').pack()
 Button(root, text="Accomodation", command=beachclick,bg='green',fg='white').pack()
+#Entry(root).pack()
 Label(root, text="      ",bg='green').pack()
 Button(root, text="No of days stay", command=monumclick,bg='green',fg='white').pack()
-Label(root, text="      ",bg='green').pack()
+#Entry(root).pack()
+Label(root, text="     ",bg='green').pack()
+#showScores = tk.Button(scores, text="Show scores", width=15, command=show)
 
 
 label1 = Label(root, textvariable = labelText,bg='green')
